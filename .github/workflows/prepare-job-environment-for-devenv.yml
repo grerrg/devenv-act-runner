@@ -1,11 +1,8 @@
 name: 
-run-name: prepare-job-environment-for-devenv.yaml
-on:
-  push:
-    branches:
-      - 'non-existing-branch'
+run-name: prepare-job-environment-for-devenv
+on: workflow_call
 jobs:
-  use-devenv:
+  prepare-job-environment-for-devenv:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
