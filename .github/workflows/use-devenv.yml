@@ -1,12 +1,9 @@
+name: 
+run-name: prepare-job-environment-for-devenv.yaml
 on:
   push:
     branches:
-      - 'demo'
-      - 'dev' 
-      - 'main'
-
-
-
+      - 'non-existing-branch'
 jobs:
   use-devenv:
     runs-on: ubuntu-latest
