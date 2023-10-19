@@ -1,6 +1,6 @@
 name: 
 run-name: prepare-job-environment-for-devenv
-on: workflow_call
+on: workflow_dispatch
 jobs:
   prepare-job-environment-for-devenv:
     runs-on: ubuntu-latest
