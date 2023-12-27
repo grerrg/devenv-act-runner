@@ -3,7 +3,10 @@ a gitea act runner based on nix, node and devenv.
 
 ## motivation
 
-create a docker container where [devenv](https://devenv.sh/) is installed for gitea act runners and gitea actions to be run on.
+I'm self-hosting a Gitea instance on NixOS.
+With the newly added [act runner](https://gitea.com/gitea/act_runner), a fork of [act](https://github.com/nektos/act), one can run GitHub Actions locally.
+Since I'm using [devenv](https://devenv.sh/) and Nix for my builds in nearly all my repositories, I need a Nix executable in a CI runner.
+Unfortunately, the official installation methods for installing Nix on `ubuntu-latest` don't work on a Gitea Act Runner.
 
 ## background
 
