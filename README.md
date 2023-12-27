@@ -8,6 +8,13 @@ With the newly added [act runner](https://gitea.com/gitea/act_runner), a fork of
 Since I'm using [devenv](https://devenv.sh/) and Nix for my builds in nearly all my repositories, I need a Nix executable in a CI runner.
 Unfortunately, the official installation methods for installing Nix on `ubuntu-latest` don't work on a Gitea Act Runner.
 
+---
+tried images:
+* "nixpkgs-latest:docker://nixpkgs/devcontainer:latest"
+* "nixos-23.05:docker://nixpkgs/nix-unstable:nixos-23.05"
+* "nixery:docker://nixery.dev/shell/nodejs/nix/git"
+
+
 ## background
 
 the official installation method for devenv for github actions doesn't work for gitea.
